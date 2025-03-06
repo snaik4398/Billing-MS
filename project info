@@ -1,0 +1,35 @@
+ProjectInfo 
+==========================
+
+This project represents the billing genration 
+
+
+after generating the PDF
+we can upload to this into GCP store and get the documentId(UUID)
+and publish the object into kafka topic 
+from where it will get consumed by other team or process which can make an entry in their data to send the PDF
+in the EMAIL or in WHATSAPP as required.
+
+
+
+// Project structure overview:
+// src/main/java/com/receipt/generator/
+//   - ReceiptGeneratorApplication.java
+//   - controller/ReceiptController.java
+
+//   - model/Item.java
+//   - model/Company.java
+//   - model/ReceiptRequest.java
+
+//   - service/ReceiptService.java
+//   - service/PdfReceiptGenerator.java
+//   - service/TxtReceiptGenerator.java
+//   - service/ReceiptGeneratorFactory.java
+
+//   - exception/ReceiptGenerationException.java
+// src/main/resources/
+//   - application.properties
+//   - static/logo.png
+//   - templates/receipt-template.html
+
+
